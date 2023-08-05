@@ -5,6 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="./script.js"></script>
     <title>BankingBoot</title>
 </head>
@@ -49,7 +52,7 @@
 
             </div>
 
-            <div class="hidden bg-color-primary-dark absolute top-0 left-0 right-0 h-[100vh] w-[100vw]"
+            <div class="hidden bg-color-primary-dark  top-0 left-0 right-0 h-screen z-100 absolute w-[100%] overflow-hidden"
                 id="mobile-menu">
                 <ul class="flex flex-col justify-start gap-10 mt-20 items-center">
                     <li><a href="#home" class="menu-hover-color" id="mLink">Home</a></li>
@@ -72,13 +75,14 @@
 
     <!-- main -->
     <Main>
-        <section class=" h-[89vh] flex items-center relative" id="home">
-            <div class="w-80 h-80 bg-color-blob blog absolute top-4 rounded-full blur-3xl opacity-60 overflow-hidden -z-10 left-5" id=""></div>
+        <section class=" h-[89vh] flex items-center " id="home">
+            <div class="w-80 h-80 bg-color-blob blog absolute top-4 rounded-full blur-3xl opacity-60 overflow-hidden -z-10 left-5"
+                id=""></div>
             <div class="container flex items-center justify-center ">
                 <div class="flex flex-col md:flex-row items-center">
                     <!-- Content -->
                     <div class="w-1/2 text-center mb-12 md:text-left md:w-1/2 md:pr-10">
-                        <h1 class="text-3xl md:text-4xl font-bold leading-snug">Awesome App for Your Financial</h1>
+                        <h1 class="title uppercase">Awesome App for Your Financial</h1>
                         <p class="leading-relaxed mb-10 mt-5">This should be used to tell a story and let your users
                             know a
                             little more about app and it's user, How can benefit them</p>
@@ -91,9 +95,53 @@
                     </div>
                 </div>
             </div>
-            <div class="w-80 h-80 bg-color-secondary blog absolute bottom-0 right-0 rounded-full blur-3xl opacity-40  -z-60 " id=""></div>
+            <div class="w-80 h-80 bg-color-secondary blog absolute bottom-0 right-0 rounded-full blur-3xl opacity-40  -z-60 "
+                id=""></div>
         </section>
+
+
+        <section id="features" class="bg-color-primary-light">
+            <div class="container py-20">
+                <div class="text-center m-auto mb-20 md:w-1/2">
+                    <h4 class="font-bold text-color-secondary mb-4 text-lg uppercase">Our features</h4>
+                    <h2 class="title">Easy To Manage Your All Payment By Our App</h2>
+                </div>
+
+                <div class="grid lg:grid-cols-3 md:grid-cols-2 gap-12 lg:gap-8 px-4 sm:px-6 lg:px-8 justify-between">
+                    <!-- features-1 -->
+                    <div
+                        class="border-2 border-solid border-color-gray text-center py-16 px-5 rounded-2xl cursor-pointer hover:bg-color-primary-dark bg-color-primary-dark ease-in duration-200">
+                        <div class="inline-block rounded-2xl py-5 px-6 border-2 border-gray-500 bg-color-secondary">
+                            <i class="fa-solid fa-calendar-days text-4xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold py-4">Expense Tracking </h3>
+                        <p class="leading-relaxed">We use application designed a testing goes to keep away</p>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div
+                        class="border-2 border-solid border-color-gray text-center py-16 px-5 rounded-2xl cursor-pointer hover:bg-color-primary-dark bg-color-primary-dark ease-in duration-200">
+                        <div class="inline-block rounded-2xl py-5 px-6 border-2 border-gray-500 bg-color-secondary">
+                            <i class="fa-solid fa-award text-4xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold py-4">Finance Snapshot </h3>
+                        <p class="leading-relaxed">We use application designed a testing goes to keep away</p>
+                    </div>
+                    <!-- Card 3 -->
+                    <div
+                        class="border-2 border-solid border-color-gray text-center py-16 px-5 rounded-2xl cursor-pointer hover:bg-color-primary-dark bg-color-primary-dark ease-in duration-200">
+                        <div class="inline-block rounded-2xl py-5 px-6 border-2 border-gray-500 bg-color-secondary">
+                            <i class="fa-solid fa-phone text-4xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold py-4">Support 24/7 </h3>
+                        <p class="leading-relaxed">We use application designed a testing goes to keep away</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
     </Main>
+
 
 
 

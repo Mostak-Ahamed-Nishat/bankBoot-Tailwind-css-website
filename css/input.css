@@ -6,6 +6,8 @@
   @apply hover:text-color-secondary duration-300;
 }
 
+
+/* hamburger */
 .hamburger {
   position: ralative;
   height: 24px;
@@ -46,6 +48,7 @@
   transform: rotate(-45deg) translateY(4px) translateX(-4px)
 }
 
+/* mobile menu */
 #mobile-menu{
   transition:all 1s;
 }
@@ -59,4 +62,9 @@ hover:li{
 
 .button-lg{
   @apply bg-color-secondary px-9 py-3  md:px-6 md:py-4 rounded-md capitalize font-bold hover:opacity-90 ease-in duration-75
+}
+
+/* Title */
+.title{
+  @apply text-3xl md:text-4xl font-bold leading-snug
 }
