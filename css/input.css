@@ -1,3 +1,62 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.menu-hover-color {
+  @apply hover:text-color-secondary duration-300;
+}
+
+.hamburger {
+  position: ralative;
+  height: 24px;
+  width: 24px;
+}
+
+.hamburger-top,
+.hamburger-middle,
+.hamburger-bottom {
+  height: 2px;
+  width: 24px;
+  background: #fff;
+  transform:rotate(0deg);
+  transition: all 0.25s;
+}
+
+.hamburger-middle {
+  transform: translateY(7px);
+}
+.hamburger-bottom {
+  transform: translateY(14px);
+}
+
+.open {
+  transform: rotate(90deg);
+  
+}
+
+.open .hamburger-middle {
+  display: none;
+}
+
+.open .hamburger-top {
+  transform: rotate(45deg) translateY(6px) translateX(6px)
+}
+
+.open .hamburger-bottom {
+  transform: rotate(-45deg) translateY(4px) translateX(-4px)
+}
+
+#mobile-menu{
+  transition:all 1s;
+}
+hover:li{
+  color:yellow !important;
+}
+
+.button-medium{
+  @apply bg-color-secondary px-9 py-2  md:px-6 md:py-3 rounded-md capitalize font-bold hover:opacity-90 ease-in duration-75
+}
+
+.button-lg{
+  @apply bg-color-secondary px-9 py-3  md:px-6 md:py-4 rounded-md capitalize font-bold hover:opacity-90 ease-in duration-75
+}

@@ -1,12 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
+    <script src="./script.js"></script>
     <title>BankingBoot</title>
 </head>
-<body>
-    
+
+<body class="bg-color-primary text-color-white tracking-wider">
+
+    <!-- Header -->
+    <header>
+        <nav class="container">
+            <div class="flex gap-10 md:gap-10 justify-between items-center">
+                <!-- logo -->
+                <div class="py-8 text-color-secondary font-bold text-3xl">
+                    <a href="#home">
+                        <span class="text-color-white">Bank</span>Boot
+                    </a>
+                </div>
+                <!-- Menu -->
+                <div>
+                    <ul class="hidden md:flex md:flex-row space-x-2  md:space-x-6 items-center" id="menu">
+                        <li><a href="#home" class="menu-hover-color">Home</a></li>
+                        <li><a href="#features" class="menu-hover-color">Features</a></li>
+                        <li><a href="#testimonial" class="menu-hover-color">Testimonial</a></li>
+                        <li><a href="#pricing" class="menu-hover-color">Pricing</a></li>
+                        <li><a href="#blog" class="menu-hover-color">Blog</a></li>
+                        <li><a href="Contact" class="menu-hover-color">Contact</a></li>
+                        <li>
+                            <button type="button" class="button-medium">Free
+                                Trial
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Mobile Menu -->
+                <div class="md:hidden z-40">
+                    <div class="hamburger " id="hamburger">
+                        <div class="hamburger-top"></div>
+                        <div class="hamburger-middle"></div>
+                        <div class="hamburger-bottom"></div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="hidden bg-color-primary-dark absolute top-0 left-0 right-0 h-[100vh] w-[100vw]"
+                id="mobile-menu">
+                <ul class="flex flex-col justify-start gap-10 mt-20 items-center">
+                    <li><a href="#home" class="menu-hover-color" id="mLink">Home</a></li>
+                    <li><a href="#features" class="menu-hover-color" id="mLink">Features</a></li>
+                    <li><a href="#testimonial" class="menu-hover-color" id="mLink">Testimonial</a></li>
+                    <li><a href="#pricing" class="menu-hover-color" id="mLink">Pricing</a></li>
+                    <li><a href="#blog" class="menu-hover-color" id="mLink">Blog</a></li>
+                    <li><a href="Contact" class="menu-hover-color" id="mLink">Contact</a></li>
+                    <li>
+                        <button type="button"
+                            class="bg-color-secondary px-9 py-3 rounded-md capitalize font-bold hover:opacity-90 ease-in duration-75">Free
+                            Trial
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <hr>
+    </header>
+
+    <!-- main -->
+    <Main>
+        <section class=" h-[89vh] flex items-center relative" id="home">
+            <div class="w-80 h-80 bg-color-blob blog absolute top-4 rounded-full blur-3xl opacity-60 overflow-hidden -z-10 left-5" id=""></div>
+            <div class="container flex items-center justify-center ">
+                <div class="flex flex-col md:flex-row items-center">
+                    <!-- Content -->
+                    <div class="w-1/2 text-center mb-12 md:text-left md:w-1/2 md:pr-10">
+                        <h1 class="text-3xl md:text-4xl font-bold leading-snug">Awesome App for Your Financial</h1>
+                        <p class="leading-relaxed mb-10 mt-5">This should be used to tell a story and let your users
+                            know a
+                            little more about app and it's user, How can benefit them</p>
+                        <button class="button-lg">Download
+                            App</button>
+                    </div>
+                    <!-- Hero Image -->
+                    <div class="w-1/2">
+                        <img src="./images/hero4.png" class="md:h-1/2" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="w-80 h-80 bg-color-secondary blog absolute bottom-0 right-0 rounded-full blur-3xl opacity-40  -z-60 " id=""></div>
+        </section>
+    </Main>
+
+
+
 </body>
+
 </html>
