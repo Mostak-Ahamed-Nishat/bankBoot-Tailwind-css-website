@@ -68,3 +68,15 @@ hover:li{
 .title{
   @apply text-3xl md:text-4xl font-bold leading-snug
 }
+
+.blobOne{
+  @apply  w-80 h-80 bg-color-blob absolute top-4 rounded-full blur-3xl opacity-40 overflow-hidden -z-10 left-5
+}
+
+
+.blobTwo{
+  @apply w-80 h-80 bg-color-secondary  absolute bottom-20   rounded-full blur-3xl opacity-30 overflow-hidden -z-10 right-0 
+}
+.feature-div{
+  @apply border-2 border-solid border-color-gray text-center py-16 px-5 rounded-2xl cursor-pointer hover:bg-color-primary-light bg-color-primary-dark ease-in duration-200
+}

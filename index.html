@@ -76,18 +76,15 @@
     <!-- main -->
     <Main>
         <section class=" h-[89vh] flex items-center " id="home">
-            <div class="w-80 h-80 bg-color-blob blog absolute top-4 rounded-full blur-3xl opacity-60 overflow-hidden -z-10 left-5"
-                id=""></div>
+            <div class="blobOne" id=""></div>
             <div class="container flex items-center justify-center ">
                 <div class="flex flex-col md:flex-row items-center">
                     <!-- Content -->
-                    <div class="w-1/2 text-center mb-12 md:text-left md:w-1/2 md:pr-10">
+                    <div class="sm:w-full text-center mb-12 md:text-left md:w-1/2 md:pr-10">
                         <h1 class="title uppercase">Awesome App for Your Financial</h1>
                         <p class="leading-relaxed mb-10 mt-5">This should be used to tell a story and let your users
-                            know a
-                            little more about app and it's user, How can benefit them</p>
-                        <button class="button-lg">Download
-                            App</button>
+                            know a little more about app and it's user, How can benefit them</p>
+                        <button class="button-lg">Download App</button>
                     </div>
                     <!-- Hero Image -->
                     <div class="w-1/2">
@@ -95,23 +92,24 @@
                     </div>
                 </div>
             </div>
-            <div class="w-80 h-80 bg-color-secondary blog absolute bottom-0 right-0 rounded-full blur-3xl opacity-40  -z-60 "
-                id=""></div>
+            <div class="blobTwo " id=""></div>
         </section>
 
-
+        <!-- Features Section -->
         <section id="features" class="bg-color-primary-light">
             <div class="container py-20">
-                <div class="text-center m-auto mb-20 md:w-1/2">
+                <div class="text-center m-auto mb-20 ">
                     <h4 class="font-bold text-color-secondary mb-4 text-lg uppercase">Our features</h4>
                     <h2 class="title">Easy To Manage Your All Payment By Our App</h2>
                 </div>
 
                 <div class="grid lg:grid-cols-3 md:grid-cols-2 gap-12 lg:gap-8 px-4 sm:px-6 lg:px-8 justify-between">
                     <!-- features-1 -->
-                    <div
-                        class="border-2 border-solid border-color-gray text-center py-16 px-5 rounded-2xl cursor-pointer hover:bg-color-primary-dark bg-color-primary-dark ease-in duration-200">
-                        <div class="inline-block rounded-2xl py-5 px-6 border-2 border-gray-500 bg-color-secondary">
+                    <div class="feature-div">
+
+                        <!-- border-2 border-solid border-color-gray text-center py-16 px-5 rounded-2xl cursor-pointer hover:bg-color-primary-light bg-color-primary-dark ease-in duration-200 -->
+
+                        <div class="inline-block rounded-2xl py-5 px-6 border-2  border-gray-500 bg-color-secondary">
                             <i class="fa-solid fa-calendar-days text-4xl"></i>
                         </div>
                         <h3 class="text-xl font-bold py-4">Expense Tracking </h3>
@@ -119,17 +117,15 @@
                     </div>
 
                     <!-- Card 2 -->
-                    <div
-                        class="border-2 border-solid border-color-gray text-center py-16 px-5 rounded-2xl cursor-pointer hover:bg-color-primary-dark bg-color-primary-dark ease-in duration-200">
+                    <div class="feature-div">
                         <div class="inline-block rounded-2xl py-5 px-6 border-2 border-gray-500 bg-color-secondary">
                             <i class="fa-solid fa-award text-4xl"></i>
                         </div>
-                        <h3 class="text-xl font-bold py-4">Finance Snapshot </h3>
+                        <h3 class="text-xl font-bold py-4">Finance Snapshot</h3>
                         <p class="leading-relaxed">We use application designed a testing goes to keep away</p>
                     </div>
                     <!-- Card 3 -->
-                    <div
-                        class="border-2 border-solid border-color-gray text-center py-16 px-5 rounded-2xl cursor-pointer hover:bg-color-primary-dark bg-color-primary-dark ease-in duration-200">
+                    <div class="feature-div">
                         <div class="inline-block rounded-2xl py-5 px-6 border-2 border-gray-500 bg-color-secondary">
                             <i class="fa-solid fa-phone text-4xl"></i>
                         </div>
@@ -139,10 +135,82 @@
                 </div>
             </div>
         </section>
-
     </Main>
 
+    <!-- Saving money -->
 
+    <section id="" class="relative">
+        <div class="container py-10">
+            <div class="blobTwo" id=""></div>
+            <div class="container flex items-center justify-center ">
+                <div class="flex flex-col md:flex-row items-center">
+                    <!-- Hero Image -->
+                    <div class="w-1/2">
+                        <img src="./images/hero3.png" class="md:h-1/2" alt="">
+                    </div>
+                    <!-- Content -->
+                    <div class="text-center mb-12 md:text-left md:w-1/2 md:pr-10">
+                        <h4 class="font-bold text-color-secondary mb-4 text-lg uppercase">Saving Money</h4>
+                        <h1 class="title">Easy To Manage Your All Payments By Our App</h1>
+                        <p class="leading-relaxed mb-10 mt-5">Best financing app ever in the world. Easy to use and very
+                            user friendly for mobile banking.You can control your card easily and send money some one
+                            just one click.</p>
+                        <button class="button-lg">Read More</button>
+                    </div>
+
+                </div>
+            </div>
+            <div class="blobOne" id=""></div>
+        </div>
+    </section>
+
+    <!-- How it works -->
+
+    <section>
+        <div class="container py-14 ">
+
+            <div class="text-center m-auto mb-20 ">
+                <h4 class="font-bold text-color-secondary mb-4 text-lg uppercase">How it works</h4>
+                <h2 class="title">Grow Up Your Money Saving</h2>
+            </div>
+
+            <div class="flex flex-col sm:gap-8 md:flex-row justify-between items-center md:gap-5">
+                <!--  Works card 1 -->
+                <div class="relative w-full md:w-1/3">
+                    <div class=" py-5 px-6 text-center ">
+                        <span class="text-6xl ">1</span>
+                    </div>
+                    <h3 class="text-xl font-bold py-4 text-center">Install The App </h3>
+                    <p class="leading-relaxed text-center">We use application designed a testing goes to keep away</p>
+                    <div class="invisible lg:visible">
+                        <img src="./images/line-bottom.png"
+                            class="absolute  top-16 left-96" alt="">
+                    </div>
+                </div>
+
+                <!--  Works card 2 -->
+                <div class="flex flex-col justify-center relative mt-6 md:mt-0 w-full md:w-1/3">
+                    <div class=" py-5 text-center  rounded-2xl ">
+                        <span class="text-6xl bg-color-secondary py-1 px-6  rounded-xl">2</span>
+                    </div>
+                    <h3 class="text-xl font-bold py-4 text-center">Setup Your Profile </h3>
+                    <p class="leading-relaxed text-center ">We use application designed a testing goes to keep away</p>
+                    <div class="invisible lg:visible">
+                        <img src="./images/line.png"
+                            class="absolute  top-10 left-96" alt="">
+                    </div>
+                </div>
+                <!-- Works card 3 -->
+                <div class=" w-full md:w-1/3">
+                    <div class=" py-5 px-6 text-center ">
+                        <span class="text-6xl ">3</span>
+                    </div>
+                    <h3 class="text-xl font-bold py-2 text-center">Enjoy The Features! </h3>
+                    <p class="leading-relaxed text-center">We use application designed a testing goes to keep away</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
 
 </body>
