@@ -6,7 +6,6 @@
   @apply hover:text-color-secondary duration-300;
 }
 
-
 /* hamburger */
 .hamburger {
   position: ralative;
@@ -20,7 +19,7 @@
   height: 2px;
   width: 24px;
   background: #fff;
-  transform:rotate(0deg);
+  transform: rotate(0deg);
   transition: all 0.25s;
 }
 
@@ -33,7 +32,6 @@
 
 .open {
   transform: rotate(90deg);
-  
 }
 
 .open .hamburger-middle {
@@ -41,42 +39,80 @@
 }
 
 .open .hamburger-top {
-  transform: rotate(45deg) translateY(6px) translateX(6px)
+  transform: rotate(45deg) translateY(6px) translateX(6px);
 }
 
 .open .hamburger-bottom {
-  transform: rotate(-45deg) translateY(4px) translateX(-4px)
+  transform: rotate(-45deg) translateY(4px) translateX(-4px);
 }
 
 /* mobile menu */
-#mobile-menu{
-  transition:all 1s;
+#mobile-menu {
+  transition: all 1s;
 }
-hover:li{
-  color:yellow !important;
-}
-
-.button-medium{
-  @apply bg-color-secondary px-9 py-2  md:px-6 md:py-3 rounded-md capitalize font-bold hover:opacity-90 ease-in duration-75
+hover:li {
+  color: yellow !important;
 }
 
-.button-lg{
-  @apply bg-color-secondary px-9 py-3  md:px-6 md:py-4 rounded-md capitalize font-bold hover:opacity-90 ease-in duration-75
+.button-medium {
+  @apply bg-color-secondary px-9 py-2  md:px-6 md:py-3 rounded-md capitalize font-bold hover:opacity-90 ease-in duration-75;
+}
+
+.button-lg {
+  @apply bg-color-secondary px-9 py-3  md:px-6 md:py-4 rounded-md capitalize font-bold hover:opacity-90 ease-in duration-75;
 }
 
 /* Title */
-.title{
-  @apply text-3xl md:text-4xl font-bold leading-snug
+.title {
+  @apply text-3xl md:text-4xl font-bold leading-snug;
 }
 
-.blobOne{
-  @apply  w-80 h-80 bg-color-blob absolute top-4 rounded-full blur-3xl opacity-40 overflow-hidden -z-10 left-5
+.blobOne {
+  @apply w-80 h-80 bg-color-blob absolute top-4 rounded-full blur-3xl opacity-40 overflow-hidden -z-10 left-5;
+}
+
+.blobTwo {
+  @apply w-80 h-80 bg-color-secondary  absolute bottom-20   rounded-full blur-3xl opacity-30 overflow-hidden -z-10 right-0;
+}
+.feature-div {
+  @apply border-2 border-solid border-color-gray text-center py-16 px-5 rounded-2xl cursor-pointer hover:bg-color-primary-light bg-color-primary-dark ease-in duration-200;
+}
+
+/*Border Active*/
+.border-active {
+  @apply border-4 border-color-secondary;
+}
+
+.user-image-style {
+  @apply h-20 w-20 rounded-full cursor-pointer;
 }
 
 
-.blobTwo{
-  @apply w-80 h-80 bg-color-secondary  absolute bottom-20   rounded-full blur-3xl opacity-30 overflow-hidden -z-10 right-0 
+.user-text {
+  display: none;
+  animation: moveup .5s linear forwards;
 }
-.feature-div{
-  @apply border-2 border-solid border-color-gray text-center py-16 px-5 rounded-2xl cursor-pointer hover:bg-color-primary-light bg-color-primary-dark ease-in duration-200
+
+.active-pic {
+  transition: all .5s ease;
+}
+
+.user-text.active-review {
+  display: block;
+  margin-top: -100px;
+}
+
+@keyframes moveup {
+  0% {
+    margin-top: 40px;
+    opacity: 0;
+  }
+  50% {
+    margin-top: 20px;
+    opacity: 0.1;
+  }
+  100% {
+    margin-top: 0px;
+    opacity: 1;
+  }
 }
