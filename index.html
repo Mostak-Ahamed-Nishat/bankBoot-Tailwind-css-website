@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 
 <head>
     <meta charset="UTF-8">
@@ -166,7 +166,7 @@
     <!-- How it works -->
 
     <section>
-        <div class="container py-14 ">
+        <div class="container py-20 ">
 
             <div class="text-center m-auto mb-20 ">
                 <h4 class="font-bold text-color-secondary mb-4 text-lg uppercase">How it works</h4>
@@ -211,10 +211,10 @@
 
     <!-- Review Section -->
 
-    <section>
+    <section class="bg-color-primary-dark">
         <div class="container my-20">
 
-            <div class="text-center m-auto mb-20 ">
+            <div class="text-center m-auto mb-14 ">
                 <h4 class="font-bold text-color-secondary mb-4 text-lg uppercase">Our Review</h4>
                 <h2 class="title">What Clients Say About Our App After Use It</h2>
             </div>
@@ -229,7 +229,7 @@
                 <img src="./images/user5.jpg" class="user-image-style user-pic" onclick="showReview()" alt="">
             </div>
 
-            <div class="grid place-items-center text-center m-auto md:w-4/5 min-h-[40vh]">
+            <div class="grid place-items-center text-center m-auto md:w-4/5 min-h-[19vh]">
                 <!-- Review-1 -->
                 <div class="user-text active-review">
                     <p class="text-center text-md my-4 ">The staff was great. The receptionists were very helpful and
@@ -265,6 +265,302 @@
                         very remarkable.”</p>
                     <h4 class="text-center font-bold text-color-secondary ">Ed Dev</h4>
                 </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+
+    <section id="pricing" class="bg-color-primary-light">
+        <div class="container py-20">
+            <div>
+                <div class="text-center m-auto mb-14 ">
+                    <h4 class="font-bold text-color-secondary mb-4 text-lg uppercase">Pricing</h4>
+                    <h2 class="title">Get In Reasonable Price</h2>
+                    <div class="mt-6 flex justify-center items-center">
+                        <span class="mr-4">Bill Monthly</span>
+                        <input type="checkbox" value="" class="sr-only peer">
+                        <label class="relative inline-flex items-center cursor-pointer">
+                            <input type="checkbox" value="" class="sr-only peer px-6" id="toggleButton">
+                            <div
+                                class="w-11 h-6 bg-gray-200 rounded-full peer peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 dark:bg-gray-700 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-0.5 after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-color-secondary focus:outline-none">
+                            </div>
+
+                        </label><span class="ml-4">Bill Annually</span>
+                    </div>
+                </div>
+
+                <!-- Card  -->
+
+                <div class="grid gap-5 md:grid-cols-2 lg:grid-cols-3">
+                    <!-- Card-1 -->
+                    <div class="card relative h-auto w-auto">
+                        <!-- Card Front Side  -->
+                        <div id="card-1-front"
+                            class="front px-7 py-11 rounded-2xl border-2 border-solid border-color-gray h-full w-full">
+
+                            <div class="relative">
+
+                                <p
+                                    class="text-6xl pl-2 font-bold before:content-['$'] before:absolute before:text-sm before:top-0 before:-left-2 inline-flex md:before:text-xl ">
+                                    20 </p> <span class="text-sm font-normal tracking-widest">/per month</span>
+                            </div>
+
+                            <div class="py-10">
+                                <h3 class="text-xl font-bold pb-3">Basic</h3>
+                                <p class="leading-relaxed">For Beginner Who Want To Scale Business Globally</p>
+                            </div>
+
+                            <ul class="space-y-4 pb-10">
+                                <li>
+                                    <i class="fa-solid fa-bookmark text-color-secondary"></i>
+                                    <span class="pl-4">Expense Management</span>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-bookmark text-color-secondary"></i>
+                                    <span class="pl-4">Card Management</span>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-bookmark text-color-gray"></i>
+                                    <span class="pl-4">Instant Statistics</span>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-bookmark text-color-gray"></i>
+                                    <span class="pl-4">Bookmark Function</span>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-bookmark text-color-gray"></i>
+                                    <span class="pl-4">Accounting System</span>
+                                </li>
+                            </ul>
+
+                            <button class="card-btn">Get Started</button>
+
+                        </div>
+
+
+                        <!-- Card-1 Back Side  -->
+                        <div id="card-1-back"
+                            class="back rotate-y-180 px-7 py-11 rounded-2xl border-2 border-solid border-color-gray h-full w-full absolute top-0 left-0 ">
+                            <div class="relative">
+
+                                <p
+                                    class="text-6xl pl-2 font-bold before:content-['$'] before:absolute before:text-sm before:top-0 before:-left-2 inline-flex md:before:text-xl ">
+                                    145 </p> <span class="text-sm font-normal tracking-widest">/per Year</span>
+                            </div>
+
+                            <div class="py-10">
+                                <h3 class="text-xl font-bold pb-3">Basic</h3>
+                                <p class="leading-relaxed">For Beginner Who Want To Scale Business Globally</p>
+                            </div>
+
+                            <ul class="space-y-4 pb-10">
+                                <li>
+                                    <i class="fa-solid fa-bookmark text-color-secondary"></i>
+                                    <span class="pl-4">Expense Management</span>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-bookmark text-color-secondary"></i>
+                                    <span class="pl-4">Card Management</span>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-bookmark text-color-secondary"></i>
+                                    <span class="pl-4">Instant Statistics</span>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-bookmark text-color-gray"></i>
+                                    <span class="pl-4">Bookmark Function</span>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-bookmark text-color-gray"></i>
+                                    <span class="pl-4">Accounting System</span>
+                                </li>
+                            </ul>
+
+                            <button class="card-btn">Get Started</button>
+                        </div>
+                    </div>
+
+                    <!-- Card-2 -->
+                    <div class="card relative h-auto w-auto">
+                        <!-- Card-2 Front Side  -->
+                        <div id="card-2-front"
+                            class="front px-7 py-11 rounded-2xl border-2 border-solid border-color-gray h-full w-full">
+
+                            <div class="relative">
+
+                                <p
+                                    class="text-6xl pl-2 font-bold before:content-['$'] before:absolute before:text-sm before:top-0 before:-left-2 inline-flex md:before:text-xl ">
+                                    50 </p> <span class="text-sm font-normal tracking-widest">/per month</span>
+                            </div>
+
+                            <div class="py-10">
+                                <h3 class="text-xl font-bold pb-3">Standard</h3>
+                                <p class="leading-relaxed">For Beginner Who Want To Scale Business Globally</p>
+                            </div>
+
+                            <ul class="space-y-4 pb-10">
+                                <li>
+                                    <i class="fa-solid fa-bookmark text-color-secondary"></i>
+                                    <span class="pl-4">Expense Management</span>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-bookmark text-color-secondary"></i>
+                                    <span class="pl-4">Card Management</span>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-bookmark text-color-secondary"></i>
+                                    <span class="pl-4">Instant Statistics</span>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-bookmark text-color-gray"></i>
+                                    <span class="pl-4">Bookmark Function</span>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-bookmark text-color-gray"></i>
+                                    <span class="pl-4">Accounting System</span>
+                                </li>
+                            </ul>
+
+                            <button class="card-btn">Get Started</button>
+
+                        </div>
+
+                        <!-- Card-2 Back Side  -->
+                        <div id="card-2-back"
+                            class="back rotate-y-180 px-7 py-11 rounded-2xl border-2 border-solid border-color-gray h-full w-full absolute top-0 left-0 ">
+                            <div class="relative">
+
+                                <p
+                                    class="text-6xl pl-2 font-bold before:content-['$'] before:absolute before:text-sm before:top-0 before:-left-2 inline-flex md:before:text-xl ">
+                                    350 </p> <span class="text-sm font-normal tracking-widest">/per Year</span>
+                            </div>
+
+                            <div class="py-10">
+                                <h3 class="text-xl font-bold pb-3">Basic</h3>
+                                <p class="leading-relaxed">For Beginner Who Want To Scale Business Globally</p>
+                            </div>
+
+                            <ul class="space-y-4 pb-10">
+                                <li>
+                                    <i class="fa-solid fa-bookmark text-color-secondary"></i>
+                                    <span class="pl-4">Expense Management</span>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-bookmark text-color-secondary"></i>
+                                    <span class="pl-4">Card Management</span>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-bookmark text-color-secondary"></i>
+                                    <span class="pl-4">Instant Statistics</span>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-bookmark text-color-secondary"></i>
+                                    <span class="pl-4">Bookmark Function</span>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-bookmark text-color-gray"></i>
+                                    <span class="pl-4">Accounting System</span>
+                                </li>
+                            </ul>
+
+                            <button class="card-btn">Get Started</button>
+                        </div>
+                    </div>
+
+
+                    <!-- Card-3 -->
+                    <div class="card relative h-auto w-auto">
+                        <!-- Card Front Side  -->
+                        <div id="card-3-front"
+                            class="front px-7 py-11 rounded-2xl border-2 border-solid border-color-gray h-full w-full">
+
+                            <div class="relative ">
+
+                                <p
+                                    class="text-6xl pl-2 font-bold before:content-['$'] before:absolute before:text-sm before:top-0 before:-left-2 inline-flex md:before:text-xl text-center">
+                                    100 </p> <span class="text-sm font-normal tracking-widest">/per month</span>
+                            </div>
+
+                            <div class="py-10">
+                                <h3 class="text-xl font-bold pb-3">Premium</h3>
+                                <p class="leading-relaxed">For Beginner Who Want To Scale Business Globally</p>
+                            </div>
+
+                            <ul class="space-y-4 pb-10">
+                                <li>
+                                    <i class="fa-solid fa-bookmark text-color-secondary"></i>
+                                    <span class="pl-4">Expense Management</span>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-bookmark text-color-secondary"></i>
+                                    <span class="pl-4">Card Management</span>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-bookmark text-color-secondary"></i>
+                                    <span class="pl-4">Instant Statistics</span>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-bookmark text-color-secondary"></i>
+                                    <span class="pl-4">Bookmark Function</span>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-bookmark text-color-secondary"></i>
+                                    <span class="pl-4">Accounting System</span>
+                                </li>
+                            </ul>
+
+                            <button class="card-btn">Get Started</button>
+
+                        </div>
+
+
+                        <!-- Card Back Side  -->
+                        <div id="card-3-back"
+                            class="back rotate-y-180 px-7 py-11 rounded-2xl border-2 border-solid border-color-gray h-full w-full absolute top-0 left-0 ">
+                            <div class="relative">
+
+                                <p
+                                    class="text-6xl pl-2 font-bold before:content-['$'] before:absolute before:text-sm before:top-0 before:-left-2 inline-flex md:before:text-xl ">
+                                    500 </p> <span class="text-sm font-normal tracking-widest">/per year</span>
+                            </div>
+
+                            <div class="py-10">
+                                <h3 class="text-xl font-bold pb-3">Basic</h3>
+                                <p class="leading-relaxed">For Beginner Who Want To Scale Business Globally</p>
+                            </div>
+
+                            <ul class="space-y-4 pb-10">
+                                <li>
+                                    <i class="fa-solid fa-bookmark text-color-secondary"></i>
+                                    <span class="pl-4">Expense Management</span>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-bookmark text-color-secondary"></i>
+                                    <span class="pl-4">Card Management</span>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-bookmark text-color-secondary"></i>
+                                    <span class="pl-4">Instant Statistics</span>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-bookmark text-color-secondary"></i>
+                                    <span class="pl-4">Bookmark Function</span>
+                                </li>
+                                <li>
+                                    <i class="fa-solid fa-bookmark text-color-secondary"></i>
+                                    <span class="pl-4">Accounting System</span>
+                                </li>
+                            </ul>
+
+                            <button class="card-btn">Get Started</button>
+                        </div>
+                    </div>
+
+
+                </div>
+
 
             </div>
         </div>

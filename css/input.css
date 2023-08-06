@@ -87,19 +87,18 @@ hover:li {
   @apply h-20 w-20 rounded-full cursor-pointer;
 }
 
-
 .user-text {
   display: none;
-  animation: moveup .5s linear forwards;
+  animation: moveup 0.5s linear forwards;
 }
 
 .active-pic {
-  transition: all .5s ease;
+  transition: all 0.5s ease;
 }
 
 .user-text.active-review {
   display: block;
-  margin-top: -100px;
+  margin-top: -200px;
 }
 
 @keyframes moveup {
@@ -115,4 +114,23 @@ hover:li {
     margin-top: 0px;
     opacity: 1;
   }
+}
+
+/*card*/
+
+.card {
+  perspective: 1000px;
+}
+.front,
+.back {
+  backface-visibility: hidden;
+  transition: all 0.5s ease;
+}
+
+.front {
+  overflow: hidden;
+}
+
+.card-btn {
+  @apply w-full px-9 py-3 bg-color-primary-dark rounded-md capitalize font-bold hover:bg-color-secondary ease-in duration-200;
 }
