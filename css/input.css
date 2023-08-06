@@ -134,3 +134,11 @@ hover:li {
 .card-btn {
   @apply w-full px-9 py-3 bg-color-primary-dark rounded-md capitalize font-bold hover:bg-color-secondary ease-in duration-200;
 }
+
+/* header{
+  position:fixed;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+} */

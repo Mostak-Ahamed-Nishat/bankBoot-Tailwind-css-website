@@ -15,63 +15,66 @@
 <body class="bg-color-primary text-color-white tracking-wider">
 
     <!-- Header -->
-    <header>
-        <nav class="container">
-            <div class="flex gap-10 md:gap-10 justify-between items-center">
-                <!-- logo -->
-                <div class="py-8 text-color-secondary font-bold text-3xl">
-                    <a href="#home">
-                        <span class="text-color-white">Bank</span>Boot
-                    </a>
+    <header class="sticky top-0 right-0 left-0 bottom-0 z-200">
+        <div class="bg-black opacity-100">
+            <nav class="container">
+                <div class="flex gap-10 md:gap-10 justify-between items-center">
+                    <!-- logo -->
+                    <div class="py-8 text-color-secondary font-bold text-3xl">
+                        <a href="#home">
+                            <span class="text-color-white">Bank</span>Boot
+                        </a>
+                    </div>
+                    <!-- Menu -->
+                    <div class="">
+                        <ul class="hidden md:flex md:flex-row space-x-2  md:space-x-6 items-center" id="menu">
+                            <li><a href="#home" class="menu-hover-color">Home</a></li>
+                            <li><a href="#features" class="menu-hover-color">Features</a></li>
+                            <li><a href="#testimonial" class="menu-hover-color">Testimonial</a></li>
+                            <li><a href="#pricing" class="menu-hover-color">Pricing</a></li>
+                            <li><a href="#blog" class="menu-hover-color">Blog</a></li>
+                            <li><a href="#contact" class="menu-hover-color">Contact</a></li>
+                            <li>
+                                <button type="button" class="button-medium">Free
+                                    Trial
+                                </button>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Mobile Menu -->
+                    <div class="md:hidden z-40">
+                        <div class="hamburger " id="hamburger">
+                            <div class="hamburger-top"></div>
+                            <div class="hamburger-middle"></div>
+                            <div class="hamburger-bottom"></div>
+                        </div>
+                    </div>
+
                 </div>
-                <!-- Menu -->
-                <div>
-                    <ul class="hidden md:flex md:flex-row space-x-2  md:space-x-6 items-center" id="menu">
-                        <li><a href="#home" class="menu-hover-color">Home</a></li>
-                        <li><a href="#features" class="menu-hover-color">Features</a></li>
-                        <li><a href="#testimonial" class="menu-hover-color">Testimonial</a></li>
-                        <li><a href="#pricing" class="menu-hover-color">Pricing</a></li>
-                        <li><a href="#blog" class="menu-hover-color">Blog</a></li>
-                        <li><a href="Contact" class="menu-hover-color">Contact</a></li>
+
+                <div class="hidden bg-color-primary-dark  top-0 left-0 right-0 h-screen z-100 absolute w-[100%] overflow-hidden"
+                    id="mobile-menu">
+                    <ul class="flex flex-col justify-start gap-10 mt-20 items-center">
+                        <li><a href="#home" class="menu-hover-color" id="mLink">Home</a></li>
+                        <li><a href="#features" class="menu-hover-color" id="mLink">Features</a></li>
+                        <li><a href="#testimonial" class="menu-hover-color" id="mLink">Testimonial</a></li>
+                        <li><a href="#pricing" class="menu-hover-color" id="mLink">Pricing</a></li>
+                        <li><a href="#blog" class="menu-hover-color" id="mLink">Blog</a></li>
+                        <li><a href="#contact" class="menu-hover-color" id="mLink">Contact</a></li>
                         <li>
-                            <button type="button" class="button-medium">Free
+                            <button type="button"
+                                class="bg-color-secondary px-9 py-3 rounded-md capitalize font-bold hover:opacity-90 ease-in duration-75">Free
                                 Trial
                             </button>
                         </li>
                     </ul>
                 </div>
+            </nav>
+        </div>
 
-                <!-- Mobile Menu -->
-                <div class="md:hidden z-40">
-                    <div class="hamburger " id="hamburger">
-                        <div class="hamburger-top"></div>
-                        <div class="hamburger-middle"></div>
-                        <div class="hamburger-bottom"></div>
-                    </div>
-                </div>
-
-            </div>
-
-            <div class="hidden bg-color-primary-dark  top-0 left-0 right-0 h-screen z-100 absolute w-[100%] overflow-hidden"
-                id="mobile-menu">
-                <ul class="flex flex-col justify-start gap-10 mt-20 items-center">
-                    <li><a href="#home" class="menu-hover-color" id="mLink">Home</a></li>
-                    <li><a href="#features" class="menu-hover-color" id="mLink">Features</a></li>
-                    <li><a href="#testimonial" class="menu-hover-color" id="mLink">Testimonial</a></li>
-                    <li><a href="#pricing" class="menu-hover-color" id="mLink">Pricing</a></li>
-                    <li><a href="#blog" class="menu-hover-color" id="mLink">Blog</a></li>
-                    <li><a href="Contact" class="menu-hover-color" id="mLink">Contact</a></li>
-                    <li>
-                        <button type="button"
-                            class="bg-color-secondary px-9 py-3 rounded-md capitalize font-bold hover:opacity-90 ease-in duration-75">Free
-                            Trial
-                        </button>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-        <hr>
     </header>
+
 
     <!-- main -->
     <Main>
@@ -165,7 +168,7 @@
 
     <!-- How it works -->
 
-    <section>
+    <section id="testimonial">
         <div class="container py-20 ">
 
             <div class="text-center m-auto mb-20 ">
@@ -563,6 +566,231 @@
 
 
             </div>
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+
+    <section class="bg-color-primary-dark" id="blog">
+        <div class="container py-20">
+            <div class="text-center m-auto mb-14 ">
+                <h4 class="font-bold text-color-secondary mb-4 text-lg uppercase">Innovation And Quality Improvement
+                </h4>
+                <h2 class="title">Latest Updates, Solution And Company News</h2>
+            </div>
+
+            <div class="grid lg:grid-cols-3 gap-4 md:grid-cols-2">
+                <!-- Card-1 -->
+                <div class="bg-color-primary-light rounded-lg py-4 px-8">
+                    <!-- img -->
+                    <div><img src="./images/blog-1.jpg" class="rounded-lg h-[290px] w-full" alt=""></div>
+                    <!-- Content -->
+                    <div class="mt-4">
+                        <div class="flex justify-between items-center">
+                            <h4>03 January 2023</h4>
+                            <p>1 min read</p>
+                        </div>
+                        <h2 class="text-2xl tracking-wide my-6">Four way to cheer yourself up on Blue Monday !</h2>
+                        <p class="text-gray-200">On the second edition of Serious Business, Inc. Editor jim Ledbetter
+                            and Fusion Senior editor
+                            Salmon debate...</p>
+
+                        <div class="py-6">
+                            <button class="  hover:text-color-secondary duration-200">Read
+                                More</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card-2 -->
+                <div class="bg-color-primary-light rounded-lg py-4 px-8">
+                    <!-- img -->
+                    <div><img src="./images/blog-2.jpg" class="rounded-lg h-[290px] w-full" alt=""></div>
+                    <!-- Content -->
+                    <div class="mt-4">
+                        <div class="flex justify-between items-center">
+                            <h4>17 June 2023</h4>
+                            <p>1 min read</p>
+                        </div>
+                        <h2 class="text-2xl tracking-wide my-6">How to Organize Your budget for Maximum Productivity?
+                        </h2>
+                        <p class="text-gray-200">Global provider connected product for consumers and enterprise
+                            worldwide, supply chain control is everything...</p>
+
+                        <div class="py-6">
+                            <button class="  hover:text-color-secondary duration-200">Read
+                                More</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card-3 -->
+                <div class="bg-color-primary-light rounded-lg py-4 px-8">
+                    <!-- img -->
+                    <div><img src="./images/blog-3.jpg" class="rounded-lg h-[290px] w-full" alt=""></div>
+                    <!-- Content -->
+                    <div class="mt-4">
+                        <div class="flex justify-between items-center">
+                            <h4>20 August 2022</h4>
+                            <p>1 min read</p>
+                        </div>
+                        <h2 class="text-2xl tracking-wide my-6">Should Small Business Be Entitled to system ?</h2>
+                        <p class="text-gray-200">On the second edition of Serious Business, Inc. Editor jim Ledbetter
+                            and Fusion Senior editor
+                            Salmon debate...</p>
+
+                        <div class="py-6">
+                            <button class="  hover:text-color-secondary duration-200">Read
+                                More</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Download Our App -->
+
+    <section id="download">
+        <div class="container py-20">
+            <div class="text-center m-auto mb-14 ">
+
+                <h2 class="title">Download App Now And Save Your Money</h2>
+                <h4 class="font-bold text-color-secondary mb-4 text-lg uppercase py-6">Serving an impressive list of
+                    long-term money with experience and expertise in multiple industries.
+                </h4>
+
+                <div class="flex flex-col md:flex-row justify-center items-center gap-2 ">
+                    <img src="./images/g-play-dark.png" alt=""
+                        class="p-4 bg-white rounded-2xl h-[80px] w-[200px] cursor-pointer" srcset="">
+                    <img src="./images/ios-store-dark.png"
+                        class="p-4 bg-white rounded-2xl h-[80px] w-[200px] cursor-pointer" alt="" srcset="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Contact Section -->
+
+    <section id="contact" class="">
+        <div class="container py-20">
+            <div class="text-center m-auto mb-14 ">
+                <h4 class="font-bold text-color-secondary mb-4 text-lg uppercase py-1">Have any queries
+                </h4>
+                <h2 class="title">Get In Touch With Us</h2>
+            </div>
+
+            <form action="">
+                <div class="bg-color-primary-light p-10 rounded-xl">
+                    <div class="grid md:grid-cols-2 md:grid-rows-2 grid-cols-1 grid-rows-4 gap-4">
+                        <input type="text" name="name"
+                            class="bg-gray-50 border-gray-200 text-sm rounded-lg block w-full p-3 focus:outline-none focus:border-color-secondary text-black"
+                            id="" placeholder="Enter Your Name">
+                        <input type="email" name="Email"
+                            class="bg-gray-50 border-gray-200 text-sm rounded-lg block w-full p-3 focus:outline-none focus:border-color-secondary text-black"
+                            id="" placeholder="Enter Your Email">
+                        <input type="tel" name="Phone"
+                            class="bg-gray-50 border-gray-200 text-sm rounded-lg block w-full p-3 focus:outline-none focus:border-color-secondary text-black"
+                            id="" placeholder="Enter Your Phone">
+                        <input type="text" name="company"
+                            class="bg-gray-50 border-gray-200 text-sm rounded-lg block w-full p-3 focus:outline-none focus:border-color-secondary text-black"
+                            id="" placeholder="Enter Your Company Name">
+                    </div>
+                    <textarea type="textarea" row="10"
+                        class="bg-gray-50 border-gray-200 text-sm rounded-lg block w-full p-8 focus:outline-none focus:border-color-secondary text-black"
+                        name="" class="w-full mt-4 " id=""></textarea>
+                    <div class="flex justify-center items-center pt-6"><button
+                            class="py-4 px-6 bg-color-secondary text-white font-bold rounded-md" type="button">Send
+                            Message</button></div>
+                </div>
+            </form>
+
+    </section>
+
+
+    <!-- Footer Section -->
+
+    <section id="footer">
+        <div class="bg-color-primary-dark relative">
+            <div class="container py-10">
+                <div class="grid gap-10 md:grid-cols-3 pb-10">
+                    <!-- About -->
+                    <div class="space-y-6">
+                        <h4 class="font-bold text-lg">About App</h4>
+                        <p class="leading-relaxed">This should Be Used TO Tell A Story And Include Any Testimonials You
+                            Might Have About Your Product Or Service For Your Clients</p>
+                        <div class="flex gap-5 items-center">
+                            <p>Flow us</p>
+                            <i class="fa-brands fa-instagram cursor-pointer hover:text-color-secondary"></i>
+                            <i class="fa-brands fa-facebook cursor-pointer hover:text-color-secondary"></i>
+                            <i class="fa-brands fa-twitter cursor-pointer hover:text-color-secondary"></i>
+                            <i class="fa-brands fa-globe cursor-pointer hover:text-color-secondary"></i>
+                        </div>
+                    </div>
+                    <!-- Menu -->
+                    <div class="flex justify-between md:justify-around ">
+                        <div class="space-x-6 ">
+                            <h4 class="font-bold text-lg  py-2">Quick Links</h4>
+                            <ul class="space-y-3">
+                                <li class="hover:underline hover:text-color-secondary -ml-6"><a href="#home">Home</a>
+                                </li>
+                                <li class="hover:underline hover:text-color-secondary -ml-6"><a
+                                        href="#home">Features</a></li>
+                                <li class="hover:underline hover:text-color-secondary -ml-6"><a
+                                        href="#home">Testimonial</a>
+                                </li>
+                                <li class="hover:underline hover:text-color-secondary -ml-6"><a href="#home">Pricing</a>
+                                </li>
+                                <li class="hover:underline hover:text-color-secondary -ml-6"><a href="#home">Blog</a>
+                                </li>
+                                <li class="hover:underline hover:text-color-secondary -ml-6"><a href="#home">Contact</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="space-x-6">
+                            <h4 class="font-bold text-lg items-center py-2">Help</h4>
+                            <ul class="space-y-3">
+                                <li class="hover:underline hover:text-color-secondary -ml-6"><a href="#home">About
+                                        Us</a></li>
+                                <li class="hover:underline hover:text-color-secondary -ml-6"><a
+                                        href="#home">Partners</a></li>
+                                <li class="hover:underline hover:text-color-secondary -ml-6"><a href="#home">Career</a>
+                                </li>
+                                <li class="hover:underline hover:text-color-secondary -ml-6"><a href="#home">Reviews</a>
+                                </li>
+                                <li class="hover:underline hover:text-color-secondary -ml-6"><a href="#home">Terms &
+                                        Conditions</a></li>
+                                <li class="hover:underline hover:text-color-secondary -ml-6"><a href="#home">Help</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- NewsLetter -->
+
+                    <div class="space-y-6">
+                        <h4 class="font-bold text-lg">Newsletter</h4>
+                        <p class="leading-relaxed">Subscribe With Email ANd Loads of News Will Be Sent To Your</p>
+                        <div class="flex items-center">
+                            <input type="email"
+                                class="text-color-gray bg-color-white p-2 lg:rounded-l-md focus:outline-none"
+                                placeholder="Enter Your Email">
+                            <button class="bg-color-secondary px-4 py-2 lg:px-5 lg:py-2 rounded-r-md hover:opacity-90"
+                                type="button">
+                                <i class="fa-solid fa-chevron-right"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="flex justify-center items-center pt-10 pb-10 border-t border-color-gray ">
+                <p>2023 &copy; Mostak Ahamed. All Rigth Received </p>
+            </div>
+
         </div>
     </section>
 
